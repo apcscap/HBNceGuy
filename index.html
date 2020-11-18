@@ -7,51 +7,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<style type="text/css">
-			.vid {
-			    width: 100vw;
-			    height: 400px;
-			    object-fit: cover;
-			    z-index: -1;
-			    position: absolute;
-			    background-color: black;
-			}
-			#yt {
-			    display: none;
-			}
-			#content {
-			}
-			p {
-			    color: white;
-			    font-size: 20pt;
-			    text-align: center;
-			    padding-top: 100px;
-			}
-			button {
-			    width: 500;
-			    height: 300;
-			}
-
-			button {
-			    display: inline-block;
-			    height: 134px;
-			    padding: 0;
-			    margin: 0;
-			    vertical-align: top;
-			    width: 104px;
-			}
-
-			#close-image img {
-			    display: block;
-			    height: 130px;  
-			    width: 100px;
-			}
-
-			#close-CSS {
-			    background-image: url( 'http://thinkingstiff.com/images/matt.jpg' );
-			    background-size: 100px 130px;
-			    height: 134px;  
-			    width: 104px;
-			}
 		</style>
 	</head>
 
@@ -59,48 +14,21 @@
 		<header>
 			<h1>You Never Finish Last</h1>
 		</header>
-		<h2>Please Accept my pebbly</h2>
+		<h2>Please Accept (Click) my pebblys :) :)</h2>
 		<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-		<video class="vid" autoplay loop>
-			<source src="video.mp4" type='video/mp4' />
-			<img id="alternative" src="alternative.jpg" />
-		</video>
-		<iframe width="500" height="315" class="vid" id="yt1" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8"></iframe>
-		<div id="content1">
-		    <p>Click on the First pebble of Christmas</p>
-		    <center>
-		        <button id="button1"><img style="width: 100%;height: auto;" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png"></button>
-		    </center>
-		</div>
-
-		<video class="vid" autoplay loop>
-			<source src="video.mp4" type='video/mp4' />
-			<img id="alternative" src="alternative.jpg" />
-		</video>
-		<iframe width="500" height="315" class="vid" id="yt2" src="https://www.youtube-nocookie.com/embed/wIgmyE5Juzw"></iframe>
-		<div id="content2">
-		    <p>Click on the Second pebble of Christmas</p>
-		    <center>
-		        <button id="button2"><img style="width: 100%;height: auto;" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png"></button>
-		    </center>
-		</div>
+		<a href="https://youtu.be/HPk-VhRjNI8" target="_blank">
+			<img width="220" height="250" border="0" align="center" src="https://qcp-corp.com/application/files/4614/9731/2715/220-Q-PEBBLE-36.png">
+		</a>
+		<a href="https://youtu.be/wIgmyE5Juzw" target="_blank">
+			<img width="220" height="250" border="0" align="center" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_eggshell_MASK_01.png">
+		</a>
+		<a href="https://youtu.be/zgOR698RMLY" target="_blank">
+			<img width="220" height="250" border="0" align="center" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png">
+		</a>
 
 	    <footer>
 		    Nothing Here
 	    </footer>
-
-	    <script type="text/javascript">
-	    $("#button1").click(function () {
-		    $("#content1").hide();
-		    $("#yt1")[0].src += "?autoplay=1";
-		    setTimeout(function(){ $("#yt1").show(); }, 100);
-		});
-		$("#button2").click(function () {
-		    $("#content2").hide();
-		    $("#yt2")[0].src += "?autoplay=1";
-		    setTimeout(function(){ $("#yt2").show(); }, 100);
-		});
-	    </script>
 	</body>
 </html>
