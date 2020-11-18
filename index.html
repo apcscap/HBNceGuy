@@ -4,15 +4,64 @@
 		<title>HBNceGuy</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<style type="text/css">
+			.vid {
+			    width: 100vw;
+			    height: 400px;
+			    object-fit: cover;
+			    z-index: -1;
+			    position: absolute;
+			    background-color: black;
+			}
+			#yt {
+			    display: none;
+			}
+			#content {
+			}
+			p {
+			    color: white;
+			    font-size: 20pt;
+			    text-align: center;
+			    padding-top: 100px;
+			}
+			button {
+			    width: 100px;
+			    height: 30px;
+			}
+		</style>
 	</head>
+
 	<body>
 		<header>
 			<h1>You Never Finish Last</h1>
 		</header>
-		<h2>Thank Mr. Chan for the inpiration</h2>
-		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<h2>Please Accept my pebbly</h2>
+		<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+		<video class="vid" autoplay loop>
+			<source src="video.mp4" type='video/mp4' />
+			<img id="alternative" src="alternative.jpg" />
+		</video>
+		<iframe width="500" height="315" class="vid" id="yt" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8"></iframe>
+		<div id="content">
+		    <p>Title</p>
+		    <center>
+		        <button>Click</button>
+		    </center>
+		</div>
+
 	    <footer>
 		    Nothing Here
 	    </footer>
+
+	    <script type="text/javascript">
+	    	$("button").click(function () {
+		    $("#content").hide();
+		    $("#yt")[0].src += "?autoplay=1";
+		    setTimeout(function(){ $("#yt").show(); }, 100);
+		});
+	    </script>
 	</body>
 </html>
