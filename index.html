@@ -66,11 +66,23 @@
 			<source src="video.mp4" type='video/mp4' />
 			<img id="alternative" src="alternative.jpg" />
 		</video>
-		<iframe width="500" height="315" class="vid" id="yt" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8"></iframe>
-		<div id="content">
-		    <p>First pebble of Christmas</p>
+		<iframe width="500" height="315" class="vid" id="yt1" src="https://www.youtube-nocookie.com/embed/HPk-VhRjNI8"></iframe>
+		<div id="content1">
+		    <p>Click on the First pebble of Christmas</p>
 		    <center>
-		        <button><img style="width: 100%;height: auto;" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png"></button>
+		        <button id="button1"><img style="width: 100%;height: auto;" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png"></button>
+		    </center>
+		</div>
+
+		<video class="vid" autoplay loop>
+			<source src="video.mp4" type='video/mp4' />
+			<img id="alternative" src="alternative.jpg" />
+		</video>
+		<iframe width="500" height="315" class="vid" id="yt2" src="https://www.youtube-nocookie.com/embed/wIgmyE5Juzw"></iframe>
+		<div id="content2">
+		    <p>Click on the Second pebble of Christmas</p>
+		    <center>
+		        <button id="button2"><img style="width: 100%;height: auto;" src="https://www.ecooutdoorusa.com/wp-content/uploads/2015/02/EcoOutdoor_WA_pebbles_anvil_MASK_01.png"></button>
 		    </center>
 		</div>
 
@@ -79,10 +91,15 @@
 	    </footer>
 
 	    <script type="text/javascript">
-	    	$("button").click(function () {
-		    $("#content").hide();
-		    $("#yt")[0].src += "?autoplay=1";
-		    setTimeout(function(){ $("#yt").show(); }, 100);
+	    $("#button1").click(function () {
+		    $("#content1").hide();
+		    $("#yt1")[0].src += "?autoplay=1";
+		    setTimeout(function(){ $("#yt1").show(); }, 100);
+		});
+		$("#button2").click(function () {
+		    $("#content2").hide();
+		    $("#yt2")[0].src += "?autoplay=1";
+		    setTimeout(function(){ $("#yt2").show(); }, 100);
 		});
 	    </script>
 	</body>
